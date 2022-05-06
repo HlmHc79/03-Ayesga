@@ -158,7 +158,7 @@ section {
 .hero {
     height:90vh;
     display: flex;
-    background-image:url('../assets/hero2.jpg');
+    background-image:url('/assets/hero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -179,7 +179,7 @@ section {
     display: flex;
     background-color: rgb(246, 231, 227);
     background-blend-mode: multiply;
-    background-image: url('../assets/about_small.jpg');
+    background-image: url('/assets/about_small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
@@ -292,7 +292,7 @@ section {
     height:25vh;
    background-color: rgb(246, 231, 227);
    background-blend-mode: multiply;
-   background-image: url('../assets/lookbook-one.jpg');
+   background-image: url('/assets/lookbook-one.jpg');
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -305,7 +305,7 @@ section {
     height:25vh;
    background-color: rgb(246, 231, 227);
    background-blend-mode: multiply;
-   background-image: url('../assets/lookbook-five.jpg');
+   background-image: url('/assets/lookbook-five.jpg');
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -369,7 +369,7 @@ section {
     margin-bottom:1em;
     background-color: rgb(243, 243, 243);
    background-blend-mode: multiply;
-   background-image: url('../assets/review1.jpg');
+   background-image: url('/assets/review1.jpg');
    background-size: cover;
    background-repeat: no-repeat;
 }
