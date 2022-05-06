@@ -17,4 +17,4 @@ The layout comes from [Ajmal khan on Dribbble](https://dribbble.com/shots/687263
 ### What I learned
 
 - I had to figure out how to build a toggle navigation ( I used [this tutorial](https://www.youtube.com/watch?v=8QKOaTYvYUA))
-- I learned how to use Grid for the gallery
+- I learned how to use Grid for the gallery ([this tutorial](https://learncssgrid.com/))
