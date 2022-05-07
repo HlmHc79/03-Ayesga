@@ -9,8 +9,6 @@ After a bit of reading and tutorials viewing my goals for this layout:
 - Use BEM CSS naming
 - Keep practicing Flexbox
 
-You can visit the result [here](https://hlmhc79.github.io/03-Ayesha-Layout/)
-
 The layout comes from [Ajmal khan on Dribbble](https://dribbble.com/shots/6872630-Ayesha-Hair-Salon-Template-Home-03)
 
 
