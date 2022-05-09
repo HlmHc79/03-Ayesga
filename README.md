@@ -10,6 +10,7 @@ After a bit of reading and tutorials viewing my goals for this layout:
 - Keep practicing Flexbox
 
 The layout comes from [Ajmal khan on Dribbble](https://dribbble.com/shots/6872630-Ayesha-Hair-Salon-Template-Home-03)
+
 You can see it deployed [here](https://ayesha-layout.netlify.app/)
 
 ### What I learned
