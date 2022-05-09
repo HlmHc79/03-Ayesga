@@ -336,12 +336,16 @@ section {
         align-items: center;
 }
 
+.container__stylist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
 .styl {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:80%;
-    margin:2em;
 }
 
 .styl-img {
@@ -349,7 +353,6 @@ section {
     flex-direction: column;
     align-items: center;
     width:80%;
-    margin:2em;
 }
 
 .stylist__title {
@@ -361,10 +364,10 @@ section {
     background-color: black;
     color:white;
     width:70%;
-    margin:-5rem;
     z-index: 99;
     text-align: center;
-    padding:0.5em 0;
+    margin-top: -2em;
+    margin-bottom: 2em;
 }
 
 .stylist__review {
@@ -542,3 +545,181 @@ footer li {
     content:"✉️";
     margin-right:5px;
 }
+
+/* -------- Tablets ------- */
+@media (max-width:758px) and (min-width: 481px) {
+    
+    .container__hero {
+        width:60%;
+        max-width: 500px;
+        padding-top:2em;
+    }
+
+    .container--flex {
+        flex-direction: row;
+        justify-content: space-between;
+        width:90%;
+        padding: 1em 0;
+    }
+
+    .container__services--faces {
+        flex-direction: row;
+        justify-content: space-between;
+        width:90%;
+        padding: 1em 0;
+        }
+    
+    .services__detail {
+            font-size: 1.0rem;
+        }
+    
+    .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
+        width:25%;
+    }
+
+    .services__indi3 {
+        background-color: rgb(246, 231, 227);
+        background-blend-mode: multiply;
+        background-image: url('/assets/lookbook-one-tablet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .readmore {
+        margin-right:1em;
+        margin-top:1em;
+        color:white;
+        background-color: black;
+        border-style: none;
+        border-radius: 5px;
+        padding:0.4em 0.5em;
+        font-size: 0.75rem;
+    }
+    
+
+    .container__stylist {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .stylist__review {
+        min-height:60vh;
+    }
+
+    .stylist__text {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .review__name {
+        font-size: 1rem;
+    }
+
+    .container___footer {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer__col {
+        padding:0;
+        margin-left:1em;
+    }
+
+    .footer__title {
+        font-size:1rem;
+    }
+.imglook {
+    margin-left: 1rem;
+}
+    }
+
+    /* -------- Small Screens ------- */
+
+    @media (min-width: 758px) {
+    
+        .container__hero {
+            width:60%;
+            max-width: 500px;
+            padding-top:2em;
+        }
+    
+        .container--flex {
+            flex-direction: row;
+            justify-content: space-between;
+            width:90%;
+            padding: 1em 0;
+        }
+    
+        .container__services--faces {
+            flex-direction: row;
+            justify-content: space-between;
+            width:90%;
+            padding: 1em 0;
+            }
+        
+        .services__detail {
+                font-size: 1.0rem;
+            }
+        
+        .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
+            width:25%;
+        }
+    
+        .services__indi3 {
+            background-color: rgb(246, 231, 227);
+            background-blend-mode: multiply;
+            background-image: url('/assets/lookbook-one-tablet.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+        .readmore {
+            margin-right:1em;
+            margin-top:1em;
+            color:white;
+            background-color: black;
+            border-style: none;
+            border-radius: 5px;
+            padding:0.4em 0.5em;
+            font-size: 0.75rem;
+        }
+        
+    
+        .container__stylist {
+            display:flex;
+            flex-direction: row;
+        }
+    
+        .stylist__review {
+            min-height:60vh;
+        }
+    
+        .stylist__text {
+            line-height: 2rem;
+            font-size: 1.5rem;
+        }
+    
+        .review__name {
+            font-size: 1rem;
+        }
+    
+        .container___footer {
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    
+        .footer__col {
+            padding:0;
+            margin-left:1em;
+        }
+    
+        .footer__title {
+            font-size:1rem;
+        }
+    .imglook {
+        margin-left: 1rem;
+    }
+        }
+    
