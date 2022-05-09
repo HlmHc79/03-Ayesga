@@ -717,6 +717,7 @@ footer li {
     
         .footer__title {
             font-size:1rem;
+            margin-left:0;
         }
     .imglook {
         margin-left: 1rem;
