@@ -125,6 +125,8 @@ nav a:hover {
     top:0;
     right:0;
     margin: 45px 1em 0 0;
+    display: flex;
+    align-items: center;
 }
 
 .nav-toggle-label span, 
@@ -628,6 +630,7 @@ footer li {
 
     .footer__title {
         font-size:1rem;
+        margin-left:0;
     }
 .imglook {
     margin-left: 1rem;
@@ -636,7 +639,11 @@ footer li {
 
     /* -------- Small Screens ------- */
 
-    @media (min-width: 758px) {
+    @media (max-width:1200px) and (min-width: 758px) {
+
+       .hero__nav {
+        font-size:1.5rem;
+       }
     
         .container__hero {
             width:60%;
@@ -685,6 +692,9 @@ footer li {
             font-size: 0.75rem;
         }
         
+        .container__centering {
+            width:50%;
+        }
     
         .container__stylist {
             display:flex;
@@ -692,22 +702,32 @@ footer li {
         }
     
         .stylist__review {
-            min-height:60vh;
+            min-height:80vh;
         }
     
         .stylist__text {
-            line-height: 2rem;
-            font-size: 1.5rem;
+            line-height: 3rem;
+            font-size: 2rem;
+        }
+
+        .styl-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1em;
         }
     
         .review__name {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     
         .container___footer {
             display:flex;
             flex-direction: row;
             align-items: flex-start;
+            justify-content: center;
+            max-width:1000px;
+            margin:auto;
         }
     
         .footer__col {
@@ -716,11 +736,225 @@ footer li {
         }
     
         .footer__title {
-            font-size:1rem;
+            font-size:1.2rem;
             margin-left:0;
         }
-    .imglook {
+
+        .max-width  {
+            max-width: 900px;
+            margin:auto;
+        }
+
+        .imglook {
         margin-left: 1rem;
-    }
+         }
+
+         .book {
+            font-size:1.5rem;
+        }
+             .booktop {
+        font-size: 1.5rem;
+             }
         }
     
+/* ------- Large screens ------*/
+
+@media (min-width: 1201px) { 
+
+
+    .nav-toggle-label {
+        display: none;
+      }
+
+      .heros {
+        display: grid;
+        height: 10vh;
+     }
+      
+      nav, .hero__nav {
+        // all: unset; /* this causes issues with Edge, since it's unsupported */
+        
+        /* the following lines are not from my video, but add Edge support */
+        position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1,1);
+        background: none;
+        top: initial;
+        left: initial;
+        /* end Edge support stuff */
+        
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      nav ul, .hero__list {
+        display: flex;
+      }
+
+      .hero__nav {
+          font-size:1.3rem;
+      }
+      
+      nav li, .hero__item {
+        margin-left: 3em;
+        margin-bottom: 0;
+      }
+      
+      nav a {
+        text-decoration:none;
+        color:white;
+    }
+    
+    nav a:hover {
+        color:goldenrod;
+    }
+    
+    .hero__logo {
+        width: 10%;
+        min-width: 100px;
+        margin: auto; }
+
+    .container__hero {
+        width:50%;
+        max-width: 500px;
+        padding-top:2em;
+    }
+
+    .hero__title, .about__title {
+        font-size: 5rem;
+    }
+
+    .hero__subtitle, {
+        font-size: 3rem;
+    }
+
+    .about {
+        height:80vh;
+    }
+
+    .about__text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .container--flex {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 2em 0;
+    max-width:1000px;
+    }
+
+    .services__title {
+        font-size: 2rem;
+    }
+
+    .services__text {
+        font-size: 1.5rem;
+    }
+
+    .services img {
+        width:80px;
+    }
+
+    .container__services--faces {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .styl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2em; }
+
+    .readmore {
+        margin-right:1em;
+        margin-top:1em;
+        color:white;
+        background-color: black;
+        border-style: none;
+        border-radius: 5px;
+        padding:0.4em 0.5em;
+        font-size: 1.5rem;
+    }
+
+    .container__stylist {
+        display: flex;
+        flex-direction: row;
+        height:60vh;
+        width:80%;
+        justify-content: space-between;
+    }
+
+    .styl-img {
+        width:100%;
+    }
+
+    .stylist__review {
+        min-height:80vh;
+        padding-top:5rem;
+    }
+
+    .stylist__text {
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    .review__name {
+        font-size: 1.5rem;
+    }
+
+    .stylist__review img {
+        width:50px;
+    }
+
+    .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
+        height: 50vh;
+    }
+
+    .container___footer {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        max-width:1000px;
+        margin:auto;
+    }
+
+    .footer__col {
+        padding:0;
+        margin-left:1em;
+    }
+
+    .footer__title {
+        font-size:2rem;
+        margin-left:0;
+    }
+
+    .footer__text, .footer__item {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .container___footer  {
+        max-width: 1200px;
+        margin:auto;
+    }
+
+    .imglook {
+        margin-left: 1rem;
+     }
+.book {
+    font-size:1.5rem;
+}
+     .booktop {
+font-size: 1rem;
+     }
+}
