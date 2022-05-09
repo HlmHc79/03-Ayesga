@@ -29,6 +29,8 @@ ul {
     background-color: black;
     text-transform: uppercase;
     height:5rem;
+    position:fixed;
+    width:100%
 }
 
 .hero__title {
@@ -161,6 +163,7 @@ section {
     background-image:url('/assets/hero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top:5rem;
 }
 
 .container__hero {
