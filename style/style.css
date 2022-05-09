@@ -490,9 +490,12 @@ footer li {
     line-height: 1rem;
 }
 
+.footer__item, .footer__text, .footer__title {
+    text-align: left;
+}
+
 .footer__col {
     width:70%;
-    text-align: center;
 }
 
 .footer__col img {
@@ -506,4 +509,32 @@ footer li {
 
 .footer__title {
     margin:1em;
+}
+
+.footer__title:after {
+    content: "";
+    border-bottom: 2px solid white;
+    width: 10%;
+    padding-top:0.5rem;
+    display: block;
+}
+
+.time::before {
+        content:"⏰";
+        margin-right:5px;
+    }
+
+.tel::before {
+    content:"☎️";
+    margin-right:5px;
+}
+
+.address::before {
+    content:"📍";
+    margin-right:5px;
+}
+
+.mel::before {
+    content:"✉️";
+    margin-right:5px;
 }
