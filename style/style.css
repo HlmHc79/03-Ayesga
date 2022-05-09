@@ -515,6 +515,7 @@ footer li {
     content: "";
     border-bottom: 2px solid white;
     width: 10%;
+    max-width: 35px;
     padding-top:0.5rem;
     display: block;
 }
