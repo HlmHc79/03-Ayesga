@@ -207,6 +207,8 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
+    height:100vh;
+    
 }
 
 .about__hours {
@@ -222,7 +224,7 @@ section {
 }
 
 .container__centering {
-   width:60%;
+    width:60%;
    padding: 2rem;
    position:relative;
 }
@@ -348,7 +350,7 @@ section {
 
 .services__detail {
     color:white;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .readmore {
@@ -397,7 +399,7 @@ section {
     background-color: black;
     color:white;
     width:70%;
-    z-index: 99;
+    z-index: 1;
     text-align: center;
     margin-top: -2em;
     margin-bottom: 2em;
@@ -408,6 +410,7 @@ section {
    background-image: url('/assets/review1.jpg');
    background-size: cover;
    background-repeat: no-repeat;
+   margin-top:5rem;
    
 }
 
@@ -601,6 +604,18 @@ footer li {
         padding: 1em 0;
     }
 
+    .container__centering {
+        padding-top:2rem;
+    }
+
+    .about {
+        height:70vh;
+    }
+
+    .container--overlay {
+        height: 70vh;
+    }
+
     .container__services--faces {
         flex-direction: row;
         justify-content: space-between;
@@ -697,7 +712,7 @@ footer li {
        }
     
        .about__text {
-           font-size:1.5rem;
+           font-size:1rem;
            line-height: 1.5;
        }
         .container__hero {
@@ -713,6 +728,15 @@ footer li {
             padding: 1em 0;
         }
     
+        .about {
+            height:100vh;
+        }
+    
+        .container--overlay {
+            height: 100vh;
+        }
+
+      
         .container__services--faces {
             flex-direction: row;
             justify-content: space-between;
@@ -736,7 +760,7 @@ footer li {
             }
 
         .services__detail {
-                font-size: 1.0rem;
+                font-size: 1.5rem;
             }
         
         .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
@@ -764,8 +788,9 @@ footer li {
         
         .container__centering {
             width:50%;
+            padding-top:2rem;
         }
-    
+
         .container__stylist {
             display:flex;
             flex-direction: row;
@@ -838,7 +863,8 @@ footer li {
 
       .heros {
         display: grid;
-     }
+        height: 15vh;
+    }  
       
       nav, .hero__nav {
         // all: unset; /* this causes issues with Edge, since it's unsupported */
@@ -889,19 +915,24 @@ footer li {
     .container__hero {
         width:50%;
         max-width: 500px;
-        padding-top:2em;
+        padding:5em;
     }
 
-    .hero__title, .about__title {
+    .hero__title{
         font-size: 5rem;
+    }
+
+
+    .about__title {
+        font-size: 4rem;
     }
 
     .hero__subtitle, {
         font-size: 3rem;
     }
 
-    .about {
-        height:80vh;
+    .hero {
+        height:100vh;
     }
 
     .about__text {
@@ -920,9 +951,13 @@ footer li {
     .container--overlay {
         position: absolute;
         width: 100%;
-        height: 80vh;
         background: rgba(0, 0, 0, 0.3);
         z-index: 1;
+        height:100vh;
+    }
+
+    .hero--overlay {
+        height:100%;
     }
 
     .services__title {
