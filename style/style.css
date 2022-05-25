@@ -238,6 +238,7 @@ section {
 
 .about__title {
     font-weight: 700;
+    font-size: 2rem;
 }
 
 .about__text {
@@ -264,6 +265,24 @@ section {
     color:goldenrod;
 }
 
+
+.book1 {
+    margin-right:1em;
+    margin-top:1em;
+    color:black;
+    background-color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding:0.4em 0.5em;
+    z-index:10;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.book1 a {
+text-decoration: none;
+color:black;
+}
 
 /* ------------------------- SECTION SERVICES -----------------------*/
 .container--flex {
@@ -391,7 +410,7 @@ section {
 }
 
 .stylist__title {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0.5em 0;
 }
 
@@ -442,7 +461,7 @@ section {
 /* ------------------------- LOOKBOOK -----------------------*/
 
 .lookbook__title {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0.5em 0;
     text-align: center;
 }
@@ -608,6 +627,18 @@ footer li {
         padding-top:2rem;
     }
 
+    .hero__title {
+        margin-bottom:1.5rem;
+    }
+
+    .hero__subtitle {
+        line-height: 3rem;
+    }
+
+    .book {
+        font-size:1.25rem;
+    }
+
     .about {
         height:70vh;
     }
@@ -630,7 +661,7 @@ footer li {
             z-index:1;
          }
     .services__detail {
-            font-size: 1.0rem;
+            font-size: 1.5rem;
         }
     
     .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
@@ -643,6 +674,10 @@ footer li {
         background-image: url('/assets/lookbook-one-tablet.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .services__indi4 {
+        justify-content: space-evenly;
     }
 
     .container__review--overlay {
@@ -661,9 +696,12 @@ footer li {
         border-style: none;
         border-radius: 5px;
         padding:0.4em 0.5em;
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
-    
+
+    .name {
+        margin-top:1rem;
+    }
 
     .container__stylist {
         display:flex;
@@ -676,7 +714,7 @@ footer li {
 
     .stylist__text {
         line-height: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .review__name {
@@ -710,11 +748,29 @@ footer li {
        .hero__nav {
         font-size:1.5rem;
        }
-    
-       .about__text {
-           font-size:1rem;
-           line-height: 1.5;
+
+       .hero__title {
+           font-size: 4.5rem;
+           margin-bottom:1.5rem;
        }
+    
+       .hero__subtitle {
+        line-height: 3rem;
+        }
+
+        .book {
+            font-size: 1.25rem;
+        }
+
+        .about__title {
+            font-size: 3rem;
+        }
+
+       .about__text {
+           font-size:1.5rem;
+           line-height: 2rem;
+       }
+
         .container__hero {
             width:60%;
             max-width: 500px;
@@ -726,6 +782,24 @@ footer li {
             justify-content: space-between;
             width:90%;
             padding: 1em 0;
+        }
+
+        .book1 {
+                margin-right:1em;
+                margin-top:1em;
+                color:black;
+                background-color: white;
+                border-style: none;
+                border-radius: 5px;
+                padding:0.4em 0.5em;
+                z-index:10;
+                font-size: 1.5rem;
+                text-decoration: none;
+        }
+
+        .book1 a {
+            text-decoration: none;
+            color:black;
         }
     
         .about {
@@ -760,9 +834,18 @@ footer li {
             }
 
         .services__detail {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         
+        .services__title {
+            font-size: 1.5rem;
+        }
+
+        .services__text {
+            font-size: 1rem;
+            padding:0 0.5rem;
+        }
+
         .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
             width:25%;
         }
@@ -775,6 +858,10 @@ footer li {
             background-repeat: no-repeat;
         }
     
+        .services__indi4 {
+            justify-content: space-evenly;
+        }
+
         .readmore {
             margin-right:1em;
             margin-top:1em;
@@ -783,7 +870,7 @@ footer li {
             border-style: none;
             border-radius: 5px;
             padding:0.4em 0.5em;
-            font-size: 0.75rem;
+            font-size: 1.2rem;
         }
         
         .container__centering {
@@ -800,9 +887,22 @@ footer li {
             min-height:80vh;
         }
     
+        .stylist__title {
+            font-size: 3rem;
+        }
+
         .stylist__text {
             line-height: 3rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            margin-left:1.5rem;
+        }
+
+        .name {
+            margin-top:1rem;
+        }
+
+        .lookbook__title {
+            font-size: 3rem;
         }
 
         .styl-img {
@@ -811,9 +911,10 @@ footer li {
             align-items: center;
             margin: 1em;
         }
-    
+
         .review__name {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            margin-left:2.5rem;
         }
     
         .container___footer {
@@ -831,8 +932,12 @@ footer li {
         }
     
         .footer__title {
-            font-size:1.2rem;
+            font-size:1.5rem;
             margin-left:0;
+        }
+
+        .footer__text {
+            font-size: 0.8rem;
         }
 
         .max-width  {
@@ -847,10 +952,17 @@ footer li {
          .book {
             font-size:1.5rem;
         }
-             .booktop {
+
+        .booktop {
         font-size: 1.5rem;
              }
+
+        .footer__item {
+            font-size: 0.8rem;
+            }
         }
+
+       
     
 /* ------- Large screens ------*/
 
@@ -913,18 +1025,35 @@ footer li {
         margin: auto; }
 
     .container__hero {
-        width:50%;
-        max-width: 500px;
+        width:60%;
+        max-width: 700px;
         padding:5em;
     }
 
     .hero__title{
         font-size: 5rem;
+        margin-bottom:2rem;
     }
 
+    .book1 {
+        margin-right:1em;
+        margin-top:1em;
+        color:black;
+        background-color: white;
+        border-style: none;
+        border-radius: 5px;
+        padding:0.4em 0.5em;
+        z-index:10;
+        font-size: 1.5rem;
+        text-decoration: none;
+}
 
+.book1 a {
+    text-decoration: none;
+    color:black;
+}
     .about__title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .hero__subtitle, {
@@ -938,6 +1067,10 @@ footer li {
     .about__text {
         font-size: 1.5rem;
         line-height: 2rem;
+    }
+
+    .about__hours {
+        font-size: 1rem;
     }
 
     .container--flex {
@@ -1013,17 +1146,21 @@ footer li {
         width:100%;
     }
 
+    .stylist__title {
+        font-size: 3rem;
+    }
+
     .stylist__review {
         min-height:80vh;
     }
 
     .stylist__text {
         line-height: 3rem;
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .review__name {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .stylist__review img {
@@ -1039,6 +1176,10 @@ footer li {
     }
     .services__indi1, .services__indi2, .services__indi3, .services__indi4 {
         height: 50vh;
+    }
+
+    .lookbook__title {
+        font-size: 3rem;
     }
 
     .container___footer {
@@ -1061,7 +1202,7 @@ footer li {
     }
 
     .footer__text, .footer__item {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         line-height: 1.5rem;
     }
 
@@ -1070,6 +1211,9 @@ footer li {
         margin:auto;
     }
 
+    .footer__item.time, .footer__item.address {
+        font-size: 1.15rem;
+    }
     .imglook {
         margin-left: 1rem;
      }
