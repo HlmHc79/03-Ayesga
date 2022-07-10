@@ -207,8 +207,8 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
-    height:100vh;
-    
+    height:100vh; 
+    border-top:solid 0.1rem white;
 }
 
 .about__hours {
